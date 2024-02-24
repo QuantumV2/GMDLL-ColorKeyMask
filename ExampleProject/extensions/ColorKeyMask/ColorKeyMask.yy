@@ -25,9 +25,6 @@
             2,
             2,
           ],"documentation":"","externalName":"MakeColorTransparent","help":"","hidden":false,"kind":1,"returnType":2,},
-        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"remove_transparency","argCount":0,"args":[
-            1,
-          ],"documentation":"","externalName":"RemoveTransparency","help":"","hidden":false,"kind":1,"returnType":1,},
       ],"init":"","kind":1,"order":[],"origname":"","ProxyFiles":[],"uncompress":false,"usesRunnerInterface":false,},
   ],
   "gradleinject": "",

@@ -19,7 +19,10 @@ extern "C" __declspec(dllexport) double MakeColorTransparent(const char* hwndStr
     COLORREF colorKey = RGB((int)r, (int)g, (int)b);
     return (double)SetTransparent(hwnd, colorKey);
 }
-BOOL WRAPPER_RemoveTransparency(HWND hwnd) {
+
+//TODO: Fix these functions
+
+/*BOOL WRAPPER_RemoveTransparency(HWND hwnd) {
     LONG_PTR exStyle = GetWindowLongPtr(hwnd, GWL_EXSTYLE);
     SetWindowLongPtr(hwnd, GWL_EXSTYLE, exStyle & ~WS_EX_LAYERED);
     RedrawWindow(hwnd, NULL, NULL, RDW_ERASE | RDW_INVALIDATE | RDW_FRAME | RDW_ALLCHILDREN);
@@ -30,4 +33,4 @@ extern "C" __declspec(dllexport) double RemoveTransparency(const char* hwndStrin
     HWND hwnd = reinterpret_cast<HWND>(std::stoull(hwndString, nullptr, 16));
     WRAPPER_RemoveTransparency(hwnd);
     return 0.0;
-}
+}*/
